@@ -1,7 +1,10 @@
-function removeVowels(str) {
-    return str.replace(/[aeiouAEIOU]/, '');
-}
 
-// Example usage:
-const inputString = "Hello, World!";
-console.log(removeVowels(inputString));
+
+function ab (word){
+
+return word.replace(/[aeiouy]/gi, '');
+
+}
+let phrase = "hellooooo eveeryyybooodyyyy";
+let result = ab(phrase);
+console.log(result);

@@ -16,19 +16,41 @@
         document.getElementById("hello").innerHTML = element.innerHTML + "Nesrine!" + eleement.innerHTML;
     </script> -->
 
-    <p id="p1"> Hello world! </p>
+    <!-- <p id="p1"> Hello world! </p>
     <p id="p2"> Hello world! </p>
     <button type="button" onclick="document.getElementById('p2').style.color = 'lightpink'">
         Click me!
-    </button>
-
+    </button> -->
+    <input  type="text" id="myInput">
+    <button id="myButton">remove</button>
+    <p id="displayValue"> </p>
 
     <script>
-        document.getElementById("p2").style.color = "lightblue";
-        document.getElementById("p2").style.fontWeight = "bold";
-        document.getElementById("p2").style.fontSize = "35px";
-        document.getElementById("p2").style.fontFamily = "Times New Roman";
-    </script>
+        // document.getElementById("p2").style.color = "lightblue";
+        // document.getElementById("p2").style.fontWeight = "bold";
+        // document.getElementById("p2").style.fontSize = "35px";
+        // document.getElementById("p2").style.fontFamily = "Times New Roman";
+
+document.getElementById('myButton').addEventListener('click', function(){
+    var inputElement = document.getElementById('myInput');
+    var inputValue = inputElement.value;
+    document.getElementById('displayValue').innerText = 'input Value:' + inputValue;
+
+});
+
+        function ab (inputValue){
+
+        return inputValue.replace(/[aeiouy]/gi, '');
+
+        }
+        
+        // var n = document.getElementById("ness").value;
+        // document.getElementById("remove").innerHTML= n;
+        
+        // let b="hello everybody";
+        // let A = document.getElementById("ness").value;
+        // document.getElementById("remove").innerHTML= A;
+        </script>
     
 </body>
 </html>
